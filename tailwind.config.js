@@ -3,12 +3,24 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      lg: { max: "1199.99px" },
-      md: { max: "991.99px" },
-      sm: { max: "767.99px" },
-      xs: { max: "479.99px" },
+      tablet: { max: "1279.99px" },
+      mobile: { max: "834.99px" },
+      xs: { max: "375.99px" },
     },
-    extend: {},
+
+    extend: {
+      fontFamily: {
+        spaceMono: ["Space Mono", "sans-serif"],
+        workSans: ["Work Sans", "sans-serif"],
+      },
+      container: {
+        padding: {
+          DEFAULT: "80px 115px",
+          tablet: "80px 72px",
+          mobile: "40px 30px",
+        },
+      },
+    },
   },
   plugins: [],
 };
