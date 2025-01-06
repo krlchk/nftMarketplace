@@ -4,7 +4,7 @@ import homepageHeroImgThree from "../../../../assets/homepageHeroImgThree.png";
 
 const HomepageHero = () => {
   return (
-    <section className="container h-auto min-h-[704px] w-full bg-[#2B2B2B]">
+    <section className="container h-auto w-full bg-[#2B2B2B]">
       <div className="flex justify-between gap-[30px] mobile:flex-col mobile:items-center">
         <div className="flex h-auto w-1/2 flex-col space-y-[30px] justify-center mobile:w-full">
           <h1 className="font-workSans tablet:text-[38px] mobile:text-[28px] text-[67px] font-semibold leading-tight text-white">

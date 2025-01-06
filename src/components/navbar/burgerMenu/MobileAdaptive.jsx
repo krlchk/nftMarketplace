@@ -6,6 +6,11 @@ const MobileAdaptive = ({ isOpen }) => {
       }`}
     >
       <div>
+      <div className="flex h-full items-center   transition-colors hover:bg-[#7437c4] bg-[#A259FF] px-[30px] py-[20px]">
+          <p className="font-workSans text-base font-semibold leading-snug text-white">
+            Sing Up
+          </p>
+        </div>
         <ul className="flex flex-col items-center">
           <a
             className="font-workSans transition-colors hover:text-gray-400 mx-[10px] px-[12px] py-[20px] text-base font-semibold leading-snug text-white"
@@ -26,11 +31,6 @@ const MobileAdaptive = ({ isOpen }) => {
             Connect a wallet
           </a>
         </ul>
-        <div className="flex h-full items-center  rounded-bl-xl transition-colors hover:bg-[#7437c4] bg-[#A259FF] px-[30px] py-[20px]">
-          <p className="font-workSans text-base font-semibold leading-snug text-white">
-            Sing Up
-          </p>
-        </div>
       </div>
     </div>
   );
