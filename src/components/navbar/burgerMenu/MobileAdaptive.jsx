@@ -6,26 +6,26 @@ const MobileAdaptive = ({ isOpen }) => {
       }`}
     >
       <div>
-      <div className="flex h-full items-center   transition-colors hover:bg-[#7437c4] bg-[#A259FF] px-[30px] py-[20px]">
+      <div className="flex h-full items-center cursor-pointer transition-colors hover:bg-[#7437c4] bg-[#A259FF] px-[30px] py-[20px]">
           <p className="font-workSans text-base font-semibold leading-snug text-white">
             Sing Up
           </p>
         </div>
-        <ul className="flex flex-col items-center">
+        <ul className="flex flex-col ">
           <a
-            className="font-workSans transition-colors hover:text-gray-400 mx-[10px] px-[12px] py-[20px] text-base font-semibold leading-snug text-white"
+            className="font-workSans transition-colors hover:text-[#A259FF] mx-[10px] px-[12px] py-[20px] text-base font-semibold leading-snug text-white"
             href=""
           >
             Marketplace
           </a>
           <a
-            className="font-workSans transition-colors hover:text-gray-400 mx-[10px] px-[12px] py-[20px] text-base font-semibold leading-snug text-white"
+            className="font-workSans transition-colors hover:text-[#A259FF] mx-[10px] px-[12px] py-[20px] text-base font-semibold leading-snug text-white"
             href=""
           >
             Rankings
           </a>
           <a
-            className="font-workSans transition-colors hover:text-gray-400 mx-[10px] px-[12px] py-[20px] text-base font-semibold leading-snug text-white"
+            className="font-workSans transition-colors hover:text-[#A259FF] mx-[10px] px-[12px] py-[20px] text-base font-semibold leading-snug text-white"
             href=""
           >
             Connect a wallet

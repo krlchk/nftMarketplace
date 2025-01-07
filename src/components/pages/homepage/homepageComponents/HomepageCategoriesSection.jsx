@@ -1,37 +1,44 @@
-import CategoryIcon from "../../../../assets/CategoryIcon.png";
+import CategoryIconOne from "../../../../assets/CategoryIconOne.png";
+import CategoryIconTwo from "../../../../assets/CategoryIconTwo.png";
+import CategoryIconThree from "../../../../assets/CategoryIconThree.png";
+import CategoryIconFour from "../../../../assets/CategoryIconFour.png";
+import CategoryIconFive from "../../../../assets/CategoryIconFive.png";
+import CategoryIconSix from "../../../../assets/CategoryIconSix.png";
+import CategoryIconSeven from "../../../../assets/CategoryIconSeven.png";
+import CategoryIconEight from "../../../../assets/CategoryIconEight.png";
 
 const HomepageCategoriesSection = () => {
   const categoriesData = [
     {
-      img: CategoryIcon,
+      img: CategoryIconOne,
       title: "Art",
     },
     {
-      img: CategoryIcon,
+      img: CategoryIconTwo,
       title: "Collectibles",
     },
     {
-      img: CategoryIcon,
+      img: CategoryIconThree,
       title: "Music",
     },
     {
-      img: CategoryIcon,
+      img: CategoryIconFour,
       title: "Photography",
     },
     {
-      img: CategoryIcon,
+      img: CategoryIconFive,
       title: "Video",
     },
     {
-      img: CategoryIcon,
+      img: CategoryIconSix,
       title: "Utility",
     },
     {
-      img: CategoryIcon,
+      img: CategoryIconSeven,
       title: "Sport",
     },
     {
-      img: CategoryIcon,
+      img: CategoryIconEight,
       title: "Virtual Worlds",
     },
   ];
@@ -44,7 +51,10 @@ const HomepageCategoriesSection = () => {
         {/* categories section */}
         <div className="grid grid-cols-4 gap-[30px] mobile:grid-cols-2">
           {categoriesData.map((category) => (
-            <div className="rounded-3xl bg-[#3B3B3B]" key={category.title}>
+            <div
+              className="cursor-pointer rounded-3xl bg-[#3B3B3B] hover:bg-[#4B4B4B]"
+              key={category.title}
+            >
               <div>
                 <img
                   className="relative left-0 right-0 top-0 w-full"

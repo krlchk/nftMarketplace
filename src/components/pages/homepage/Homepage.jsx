@@ -5,6 +5,9 @@ import HomePageCreatorsSection from "./homepageComponents/HomePageCreatorsSectio
 import HomepageCategoriesSection from "./homepageComponents/HomepageCategoriesSection";
 import HomepageNFTSection from "./homepageComponents/HomepageNFTSection";
 import HomepageSectionFive from "./homepageComponents/HomepageSectionFive";
+import HomepageSectionSix from "./homepageComponents/HomepageSectionSix";
+import HomepageSectionSeven from "./homepageComponents/HomepageSectionSeven";
+import Footer from "../../footer/Footer";
 
 const Homepage = () => {
   return (
@@ -15,7 +18,10 @@ const Homepage = () => {
       <HomePageCreatorsSection />
       <HomepageCategoriesSection />
       <HomepageNFTSection />
-      <HomepageSectionFive/>
+      <HomepageSectionFive />
+      <HomepageSectionSix />
+      <HomepageSectionSeven/>
+      <Footer/>
     </main>
   );
 };

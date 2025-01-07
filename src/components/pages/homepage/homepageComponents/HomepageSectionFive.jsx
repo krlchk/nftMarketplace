@@ -10,7 +10,7 @@ const HomepageSectionFive = () => {
         background: `linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #A259FF 100%), url(${MashroomImg})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        backgroundPosition: "center"
+        backgroundPosition: "center",
       }}
     >
       <div className="flex flex-col">
@@ -27,18 +27,18 @@ const HomepageSectionFive = () => {
             <h1 className="mb-[30px] font-workSans text-[51px] font-semibold leading-tight text-white tablet:text-[38px]">
               Magic Mashrooms
             </h1>
-            <div className="flex max-w-[200px] items-center rounded-[20px] bg-white px-[50px] py-[19px] transition-colors mobile:mb-[30px] mobile:max-w-full mobile:justify-center">
+            <div className="flex max-w-[200px] cursor-pointer items-center rounded-[20px] bg-violet-900/70 px-[50px] py-[19px] transition-colors hover:bg-violet-950/70 mobile:mb-[30px] mobile:max-w-full mobile:justify-center">
               <div className="mr-3">
                 <img className="h-auto w-[20px]" src={EyeImage} alt="logo" />
               </div>
-              <p className="font-workSans text-base font-semibold leading-snug text-black">
+              <p className="font-workSans text-base font-semibold leading-snug text-white">
                 See NFT
               </p>
             </div>
           </div>
 
           {/* Timer */}
-          <div className="flex flex-col justify-center rounded-[20px] backdrop-blur-sm bg-violet-900/70 px-[30px] py-[30px] text-white mobile:items-center">
+          <div className="flex cursor-pointer flex-col justify-center rounded-[20px] bg-violet-900/70 px-[30px] py-[30px] text-white backdrop-blur-sm hover:bg-violet-950/70 mobile:items-center">
             <div>
               <p className="font-spaceMono text-[12px] font-normal leading-tight">
                 Auction ends in:

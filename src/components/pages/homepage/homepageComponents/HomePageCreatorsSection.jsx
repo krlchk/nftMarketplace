@@ -1,7 +1,19 @@
 import { useState, useEffect } from "react";
 
 import RocketLaunch from "../../../../assets/RocketLaunch.png";
+// Creators logos
 import CreatorOne from "../../../../assets/CreatorOne.png";
+import CreatorTwo from "../../../../assets/CreatorTwo.png";
+import CreatorThree from "../../../../assets/CreatorThree.png";
+import CreatorFour from "../../../../assets/CreatorFour.png";
+import CreatorFive from "../../../../assets/CreatorFive.png";
+import CreatorSix from "../../../../assets/CreatorSix.png";
+import CreatorSeven from "../../../../assets/CreatorSeven.png";
+import CreatorEight from "../../../../assets/CreatorEight.png";
+import CreatorNine from "../../../../assets/CreatorNine.png";
+import CreatorTen from "../../../../assets/CreatorTen.png";
+import CreatorEleven from "../../../../assets/CreatorEleven.png";
+import CreatorTwelve from "../../../../assets/CreatorTwelve.png";
 
 const HomePageCreatorsSection = () => {
   const creatorsData = [
@@ -11,57 +23,57 @@ const HomePageCreatorsSection = () => {
       totalSales: "34.53 ETH",
     },
     {
-      image: CreatorOne,
+      image: CreatorTwo,
       name: "DigiLab",
       totalSales: "34.53 ETH",
     },
     {
-      image: CreatorOne,
+      image: CreatorThree,
       name: "GravityOne",
       totalSales: "34.53 ETH",
     },
     {
-      image: CreatorOne,
+      image: CreatorFour,
       name: "Juanie",
       totalSales: "34.53 ETH",
     },
     {
-      image: CreatorOne,
+      image: CreatorFive,
       name: "BlueWhale",
       totalSales: "34.53 ETH",
     },
     {
-      image: CreatorOne,
+      image: CreatorSix,
       name: "Mr fox",
       totalSales: "34.53 ETH",
     },
     {
-      image: CreatorOne,
+      image: CreatorSeven,
       name: "Shroomie",
       totalSales: "34.53 ETH",
     },
     {
-      image: CreatorOne,
+      image: CreatorEight,
       name: "Robotica",
       totalSales: "34.53 ETH",
     },
     {
-      image: CreatorOne,
+      image: CreatorNine,
       name: "RustyRobot",
       totalSales: "34.53 ETH",
     },
     {
-      image: CreatorOne,
+      image: CreatorTen,
       name: "Animakid",
       totalSales: "34.53 ETH",
     },
     {
-      image: CreatorOne,
+      image: CreatorEleven,
       name: "Dotgu",
       totalSales: "34.53 ETH",
     },
     {
-      image: CreatorOne,
+      image: CreatorTwelve,
       name: "Ghiblier",
       totalSales: "34.53 ETH",
     },
@@ -101,7 +113,7 @@ const HomePageCreatorsSection = () => {
                 Checkout Top Rated Creators on the NFT Marketplace
               </p>
             </div>
-            <div className="flex max-w-[224px] items-center rounded-[20px] border-2 border-[#A259FF] bg-none px-[30px] py-[20px] transition-colors hover:bg-[#7437c4] mobile:max-w-full mobile:justify-center">
+            <div className="flex max-w-[224px] items-center rounded-[20px] border-2 cursor-pointer border-[#A259FF] bg-none px-[30px] py-[20px] transition-colors hover:bg-[#7437c4] mobile:max-w-full mobile:justify-center">
               <div className="mr-3">
                 <img
                   className="h-auto w-[20px]"
@@ -119,7 +131,7 @@ const HomePageCreatorsSection = () => {
         <div className="grid grid-cols-4 gap-[30px] tablet:grid-cols-2 mobile:grid-cols-1 mobile:gap-[20px]">
           {visibleData.map((creator) => (
             <div
-              className="flex flex-col items-center rounded-[20px] bg-[#3B3B3B] px-[20px] py-[20px] tablet:flex-row tablet:p-[20px]"
+              className="flex flex-col cursor-pointer hover:bg-[#4B4B4B] items-center rounded-[20px] bg-[#3B3B3B] px-[20px] py-[20px] tablet:flex-row tablet:p-[20px]"
               key={creator.name}
             >
               <div className="mb-[20px] flex max-h-[120px] max-w-[110px] tablet:mb-0 tablet:mr-[20px]">

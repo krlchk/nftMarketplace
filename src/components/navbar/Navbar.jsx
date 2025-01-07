@@ -62,25 +62,25 @@ const Navbar = () => {
         <div className="tablet:hidden flex items-center">
           <ul className="flex items-center">
             <a
-              className="font-workSans transition-colors hover:text-gray-400 mx-[10px] px-[12px] py-[20px] text-base font-semibold leading-snug text-white"
+              className="font-workSans transition-colors hover:text-[#A259FF] mx-[10px] px-[12px] py-[20px] text-base font-semibold leading-snug text-white"
               href=""
             >
               Marketplace
             </a>
             <a
-              className="font-workSans transition-colors hover:text-gray-400 mx-[10px] px-[12px] py-[20px] text-base font-semibold leading-snug text-white"
+              className="font-workSans transition-colors hover:text-[#A259FF] mx-[10px] px-[12px] py-[20px] text-base font-semibold leading-snug text-white"
               href=""
             >
               Rankings
             </a>
             <a
-              className="font-workSans transition-colors hover:text-gray-400 mx-[10px] px-[12px] py-[20px] text-base font-semibold leading-snug text-white"
+              className="font-workSans transition-colors hover:text-[#A259FF] mx-[10px] px-[12px] py-[20px] text-base font-semibold leading-snug text-white"
               href=""
             >
               Connect a wallet
             </a>
           </ul>
-          <div className="flex h-full items-center rounded-[20px] transition-colors hover:bg-[#7437c4] bg-[#A259FF] px-[30px] py-[20px]">
+          <div className="flex h-full cursor-pointer items-center rounded-[20px] transition-colors hover:bg-[#7437c4] bg-[#A259FF] px-[30px] py-[20px]">
             <div className="mr-3">
               <img src={SignInLogo} alt="logo" />
             </div>
