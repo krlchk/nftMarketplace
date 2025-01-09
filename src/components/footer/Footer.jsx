@@ -4,6 +4,7 @@ import DiscordLogo from "../../assets/DiscordLogo.png";
 import YoutubeLogo from "../../assets/YoutubeLogo.png";
 import TwitterLogo from "../../assets/TwitterLogo.png";
 import InstagramLogo from "../../assets/InstagramLogo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,56 +13,56 @@ const Footer = () => {
       <div className="grid grid-cols-5 p-4 pb-0 tablet:grid-cols-1 tablet:space-y-[30px]">
         <div className="col-span-2 flex flex-col space-y-7">
           {/* logo */}
-          <div className="flex items-center">
+          <Link to="/" className="flex items-center">
             <div className="mr-3 flex items-center">
               <img src={HomeLogo} alt="logo" />
             </div>
             <div className="flex items-center">
               <img src={ABCLogo} alt="logo" />
             </div>
-          </div>
+          </Link>
 
-          <a className="max-w-[250px]" href="#">
+          <Link to="https://anima.io/" className="max-w-[250px]" href="#">
             <span className="font-workSans text-[16px] font-normal leading-snug text-[#CCCCCC] transition-colors hover:text-[#A259FF]">
               NFT marketplace UI created with Anima for Figma.
             </span>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="/signup" href="#">
             <span className="font-workSans text-[16px] font-normal leading-snug text-[#CCCCCC] transition-colors hover:text-[#A259FF]">
               Join our community
             </span>
-          </a>
+          </Link>
 
           {/* SVGS SOCIAL */}
           <div className="flex gap-[10px]">
-            <div>
+            <Link to="https://discord.com/">
               <img
                 className="max-h-[32px] max-w-[32px] cursor-pointer"
                 src={DiscordLogo}
                 alt="img"
               />
-            </div>
-            <div>
+            </Link>
+            <Link to="https://www.youtube.com/">
               <img
                 className="max-h-[32px] max-w-[32px] cursor-pointer"
                 src={YoutubeLogo}
                 alt="img"
               />
-            </div>
-            <div>
+            </Link>
+            <Link to="https://x.com/?lang=uk">
               <img
                 className="max-h-[32px] max-w-[32px] cursor-pointer"
                 src={TwitterLogo}
                 alt="img"
               />
-            </div>
-            <div>
+            </Link>
+            <Link to="https://www.instagram.com/">
               <img
                 className="max-h-[32px] max-w-[32px] cursor-pointer"
                 src={InstagramLogo}
                 alt="img"
               />
-            </div>
+            </Link>
           </div>
         </div>
 
@@ -70,21 +71,21 @@ const Footer = () => {
             <h1 className="font-spaceMono text-[22px] font-bold leading-relaxed text-white">
               Explore
             </h1>
-            <a href="#">
+            <Link to="/marketplace">
               <span className="font-workSans text-[16px] font-normal leading-snug text-[#CCCCCC] transition-colors hover:text-[#A259FF]">
                 Marketplace
               </span>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="/rankings">
               <span className="font-workSans text-[16px] font-normal leading-snug text-[#CCCCCC] transition-colors hover:text-[#A259FF]">
                 Rankings
               </span>
-            </a>
-            <a href="#">
+            </Link>
+            <Link to="/connect-wallet">
               <span className="font-workSans text-[16px] font-normal leading-snug text-[#CCCCCC] transition-colors hover:text-[#A259FF]">
                 Connect a wallet
               </span>
-            </a>
+            </Link>
           </ul>
         </div>
 
@@ -93,11 +94,11 @@ const Footer = () => {
             <h1 className="font-spaceMono text-[22px] font-bold leading-relaxed text-white">
               Join our weekly digest
             </h1>
-            <a href="#">
-              <span className="font-workSans text-[16px] font-normal leading-snug text-[#CCCCCC] transition-colors hover:text-[#A259FF]">
+            <p>
+              <span className="font-workSans text-[16px] font-normal leading-snug text-[#CCCCCC]">
                 Get exclusive promotions & updates straight to your inbox.
               </span>
-            </a>
+            </p>
             <div>
               <form className="flex items-center tablet:flex-col" action="">
                 <input

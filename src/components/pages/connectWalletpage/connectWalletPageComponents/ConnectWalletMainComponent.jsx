@@ -3,6 +3,7 @@ import Metamask from "../../../../assets/Metamask.png";
 import WalletConnect from "../../../../assets/WalletConnect.png";
 import Coinbase from "../../../../assets/Coinbase.png";
 import walletMainImage from "../../../../assets/walletMainImage.png";
+import { Link } from "react-router-dom";
 
 const ConnectWalletMainComponent = () => {
   return (
@@ -10,7 +11,11 @@ const ConnectWalletMainComponent = () => {
       <div className="grid grid-cols-2 mobile:grid-cols-1">
         {/* IMG div */}
         <div className="h-full w-full">
-          <img className="inset-0 h-full w-full" src={walletMainImage} alt="img" />
+          <img
+            className="inset-0 h-full w-full"
+            src={walletMainImage}
+            alt="img"
+          />
         </div>
 
         {/* div 2 */}
@@ -27,7 +32,10 @@ const ConnectWalletMainComponent = () => {
 
           {/* Form */}
           <div className="flex flex-col gap-[36px]">
-            <div className="flex w-3/4 items-center rounded-[20px] border border-[#A259FF] py-[20px] pl-[40px] pr-[20px] hover:bg-[#7437c4] tablet:w-full">
+            <Link
+              to="https://metamask.io/ru/"
+              className="flex w-3/4 cursor-pointer items-center rounded-[20px] border border-[#A259FF] py-[20px] pl-[40px] pr-[20px] hover:bg-[#7437c4] tablet:w-full"
+            >
               <div className="mr-[20px]">
                 <img
                   className="max-h-[40px] max-w-[40px]"
@@ -38,8 +46,11 @@ const ConnectWalletMainComponent = () => {
               <p className="font-workSans text-[22px] font-semibold leading-snug text-white">
                 Metamask
               </p>
-            </div>
-            <div className="flex w-3/4 items-center rounded-[20px] border border-[#A259FF] py-[20px] pl-[40px] pr-[20px] hover:bg-[#7437c4] tablet:w-full">
+            </Link>
+            <Link
+              to="https://walletconnect.network/"
+              className="flex w-3/4 cursor-pointer items-center rounded-[20px] border border-[#A259FF] py-[20px] pl-[40px] pr-[20px] hover:bg-[#7437c4] tablet:w-full"
+            >
               <div className="mr-[20px]">
                 <img
                   className="max-h-[40px] max-w-[40px]"
@@ -50,8 +61,11 @@ const ConnectWalletMainComponent = () => {
               <p className="font-workSans text-[22px] font-semibold leading-snug text-white">
                 Wallet Connect
               </p>
-            </div>
-            <div className="flex w-3/4 items-center rounded-[20px] border border-[#A259FF] py-[20px] pl-[40px] pr-[20px] hover:bg-[#7437c4] tablet:w-full">
+            </Link>
+            <Link
+              to="https://www.coinbase.com/ru"
+              className="flex w-3/4 cursor-pointer items-center rounded-[20px] border border-[#A259FF] py-[20px] pl-[40px] pr-[20px] hover:bg-[#7437c4] tablet:w-full"
+            >
               <div className="mr-[20px]">
                 <img
                   className="max-h-[40px] max-w-[40px]"
@@ -62,7 +76,7 @@ const ConnectWalletMainComponent = () => {
               <p className="font-workSans text-[22px] font-semibold leading-snug text-white">
                 Coinbase
               </p>
-            </div>
+            </Link>
           </div>
           {/* Form */}
         </div>

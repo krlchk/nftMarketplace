@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const MobileAdaptive = ({ isOpen }) => {
   return (
     <div
@@ -7,29 +9,29 @@ const MobileAdaptive = ({ isOpen }) => {
     >
       <div>
       <div className="flex h-full items-center cursor-pointer transition-colors hover:bg-[#7437c4] bg-[#A259FF] px-[30px] py-[20px]">
-          <p className="font-workSans text-base font-semibold leading-snug text-white">
+          <Link to="/signup" className="font-workSans text-base font-semibold leading-snug text-white">
             Sing Up
-          </p>
+          </Link>
         </div>
         <ul className="flex flex-col ">
-          <a
+          <Link
             className="font-workSans transition-colors hover:text-[#A259FF] mx-[10px] px-[12px] py-[20px] text-base font-semibold leading-snug text-white"
-            href=""
+            to="/marketplace"
           >
             Marketplace
-          </a>
-          <a
+          </Link>
+          <Link
             className="font-workSans transition-colors hover:text-[#A259FF] mx-[10px] px-[12px] py-[20px] text-base font-semibold leading-snug text-white"
-            href=""
+            to="/rankings"
           >
             Rankings
-          </a>
-          <a
+          </Link>
+          <Link
             className="font-workSans transition-colors hover:text-[#A259FF] mx-[10px] px-[12px] py-[20px] text-base font-semibold leading-snug text-white"
-            href=""
+            to="/connect-wallet"
           >
             Connect a wallet
-          </a>
+          </Link>
         </ul>
       </div>
     </div>

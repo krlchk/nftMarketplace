@@ -6,6 +6,7 @@ import CategoryIconFive from "../../../../assets/CategoryIconFive.png";
 import CategoryIconSix from "../../../../assets/CategoryIconSix.png";
 import CategoryIconSeven from "../../../../assets/CategoryIconSeven.png";
 import CategoryIconEight from "../../../../assets/CategoryIconEight.png";
+import { Link } from "react-router-dom";
 
 const HomepageCategoriesSection = () => {
   const categoriesData = [
@@ -51,7 +52,8 @@ const HomepageCategoriesSection = () => {
         {/* categories section */}
         <div className="grid grid-cols-4 gap-[30px] mobile:grid-cols-2">
           {categoriesData.map((category) => (
-            <div
+            <Link
+            to="/"
               className="cursor-pointer rounded-3xl bg-[#3B3B3B] hover:bg-[#4B4B4B]"
               key={category.title}
             >
@@ -65,7 +67,7 @@ const HomepageCategoriesSection = () => {
               <p className="mx-[30px] my-[25px] font-workSans text-[22px] font-semibold leading-snug text-white tablet:text-[16px]">
                 {category.title}
               </p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

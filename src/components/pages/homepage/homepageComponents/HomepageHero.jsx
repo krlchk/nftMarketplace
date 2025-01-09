@@ -1,6 +1,7 @@
 import homePageImg from "../../../../assets/homepageHeroImage.png";
 import homePageImgTwo from "../../../../assets/homepageHeroImgTwo.png";
 import homepageHeroImgThree from "../../../../assets/homepageHeroImgThree.png";
+import { Link } from "react-router-dom";
 
 const HomepageHero = () => {
   return (
@@ -14,7 +15,7 @@ const HomepageHero = () => {
             NFT marketplace UI created with Anima for Figma. Collect, buy and
             sell art from more than 20k NFT artists.
           </p>
-          <div className="flex max-w-[224px] mobile:justify-center mobile:max-w-full items-center rounded-[20px] transition-colors cursor-pointer hover:bg-[#7437c4] bg-[#A259FF] px-[30px] py-[20px]">
+          <Link to="/marketplace" className="flex max-w-[224px] mobile:justify-center mobile:max-w-full items-center rounded-[20px] transition-colors cursor-pointer hover:bg-[#7437c4] bg-[#A259FF] px-[30px] py-[20px]">
             <div className="mr-3">
               <img
                 className="h-auto w-[20px]"
@@ -25,7 +26,7 @@ const HomepageHero = () => {
             <p className="font-workSans text-base font-semibold leading-snug text-white">
               Get Started
             </p>
-          </div>
+          </Link>
           <div className="flex justify-between">
             <div>
               <span className="font-spaceMono tablet:text-[22px] text-[28px] font-bold leading-relaxed text-white">

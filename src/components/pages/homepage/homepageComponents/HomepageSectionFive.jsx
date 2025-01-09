@@ -1,6 +1,7 @@
 import MashroomImg from "../../../../assets/Mashroom.png";
 import Shroomie from "../../../../assets/Shroomie.png";
 import EyeImage from "../../../../assets/Eye.png";
+import { Link } from "react-router-dom";
 
 const HomepageSectionFive = () => {
   return (
@@ -27,14 +28,14 @@ const HomepageSectionFive = () => {
             <h1 className="mb-[30px] font-workSans text-[51px] font-semibold leading-tight text-white tablet:text-[38px]">
               Magic Mashrooms
             </h1>
-            <div className="flex max-w-[200px] cursor-pointer items-center rounded-[20px] bg-violet-900/70 px-[50px] py-[19px] transition-colors hover:bg-violet-950/70 mobile:mb-[30px] mobile:max-w-full mobile:justify-center">
+            <Link to="" className="flex max-w-[200px] cursor-pointer items-center rounded-[20px] bg-violet-900/70 px-[50px] py-[19px] transition-colors hover:bg-violet-950/70 mobile:mb-[30px] mobile:max-w-full mobile:justify-center">
               <div className="mr-3">
                 <img className="h-auto w-[20px]" src={EyeImage} alt="logo" />
               </div>
               <p className="font-workSans text-base font-semibold leading-snug text-white">
                 See NFT
               </p>
-            </div>
+            </Link>
           </div>
 
           {/* Timer */}

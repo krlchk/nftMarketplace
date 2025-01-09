@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom";
 // Components
 import Navbar from "../../navbar/Navbar";
 import Footer from "../../footer/Footer";
@@ -16,109 +17,119 @@ import DiscordLogo from "../../../assets/DiscordLogo.png";
 import dogNft from "../../../assets/dogNft.png";
 
 const ArtistPage = () => {
-  const artistData = {
-    id: "1",
-    name: "Animakid",
-    volume: "250k",
-    sold: "50k",
-    followers: "3000",
-    code: "0xc0E3...B79C",
-    bio: "The internet's friendliest designer kid.",
-    nftList: [
-      {
-        id: "1",
-        image: dogNft,
-        title: "Distant Galaxy",
-        artistName: "Animakid",
-        artistLogo: Logo,
-        price: "1.63 ETH",
-        bid: "0.33 wETH",
+  const { id } = useParams();
+
+  const allArtists = [
+    {
+      id: "1",
+      name: "Animakid",
+      volume: "250k",
+      sold: "50k",
+      followers: "3000",
+      code: "0xc0E3...B79C",
+      bio: "The internet's friendliest designer kid.",
+      nftList: [
+        {
+          id: "1",
+          image: dogNft,
+          title: "Distant Galaxy",
+          artistName: "Animakid",
+          artistLogo: Logo,
+          price: "1.63 ETH",
+          bid: "0.33 wETH",
+        },
+        {
+          id: "2",
+          image: dogNft,
+          title: "Life On Edena",
+          artistName: "Animakid",
+          artistLogo: Logo,
+          price: "1.63 ETH",
+          bid: "0.33 wETH",
+        },
+        {
+          id: "3",
+          image: dogNft,
+          title: "AstroFiction",
+          artistName: "Animakid",
+          artistLogo: Logo,
+          price: "1.63 ETH",
+          bid: "0.33 wETH",
+        },
+        {
+          id: "4",
+          image: dogNft,
+          title: "CryptoCity",
+          artistName: "Animakid",
+          artistLogo: Logo,
+          price: "1.63 ETH",
+          bid: "0.33 wETH",
+        },
+        {
+          id: "5",
+          image: dogNft,
+          title: "ColorfulDog 0524",
+          artistName: "Animakid",
+          artistLogo: Logo,
+          price: "1.63 ETH",
+          bid: "0.33 wETH",
+        },
+        {
+          id: "6",
+          image: dogNft,
+          title: "Space Tales",
+          artistName: "Animakid",
+          artistLogo: Logo,
+          price: "1.63 ETH",
+          bid: "0.33 wETH",
+        },
+        {
+          id: "7",
+          image: dogNft,
+          title: "Cherry Blossom Girl 037",
+          artistName: "Animakid",
+          artistLogo: Logo,
+          price: "1.63 ETH",
+          bid: "0.33 wETH",
+        },
+        {
+          id: "8",
+          image: dogNft,
+          title: "Dancing Robots 0987",
+          artistName: "Animakid",
+          artistLogo: Logo,
+          price: "1.63 ETH",
+          bid: "0.33 wETH",
+        },
+        {
+          id: "9",
+          image: dogNft,
+          title: "IceCream Ape ",
+          artistName: "Animakid",
+          artistLogo: Logo,
+          price: "1.63 ETH",
+          bid: "0.33 wETH",
+        },
+      ],
+      artistHeader: {
+        backgroundImage: Castle,
+        logoImage: Logo,
       },
-      {
-        id: "2",
-        image: dogNft,
-        title: "Life On Edena",
-        artistName: "Animakid",
-        artistLogo: Logo,
-        price: "1.63 ETH",
-        bid: "0.33 wETH",
+      socialLinks: {
+        twitter: TwitterLogo,
+        youtube: YoutubeLogo,
+        instagram: InstagramLogo,
+        globe: GlobeLogo,
+        discord: DiscordLogo,
       },
-      {
-        id: "3",
-        image: dogNft,
-        title: "AstroFiction",
-        artistName: "Animakid",
-        artistLogo: Logo,
-        price: "1.63 ETH",
-        bid: "0.33 wETH",
-      },
-      {
-        id: "4",
-        image: dogNft,
-        title: "CryptoCity",
-        artistName: "Animakid",
-        artistLogo: Logo,
-        price: "1.63 ETH",
-        bid: "0.33 wETH",
-      },
-      {
-        id: "5",
-        image: dogNft,
-        title: "ColorfulDog 0524",
-        artistName: "Animakid",
-        artistLogo: Logo,
-        price: "1.63 ETH",
-        bid: "0.33 wETH",
-      },
-      {
-        id: "6",
-        image: dogNft,
-        title: "Space Tales",
-        artistName: "Animakid",
-        artistLogo: Logo,
-        price: "1.63 ETH",
-        bid: "0.33 wETH",
-      },
-      {
-        id: "7",
-        image: dogNft,
-        title: "Cherry Blossom Girl 037",
-        artistName: "Animakid",
-        artistLogo: Logo,
-        price: "1.63 ETH",
-        bid: "0.33 wETH",
-      },
-      {
-        id: "8",
-        image: dogNft,
-        title: "Dancing Robots 0987",
-        artistName: "Animakid",
-        artistLogo: Logo,
-        price: "1.63 ETH",
-        bid: "0.33 wETH",
-      },
-      {
-        id: "9",
-        image: dogNft,
-        title: "IceCream Ape ",
-        artistName: "Animakid",
-        artistLogo: Logo,
-        price: "1.63 ETH",
-        bid: "0.33 wETH",
-      },
-    ],
-    artistHeader: {
-      backgroundImage: Castle,
-      logoImage: Logo,
     },
-    socialLinks: {
-      twitter: TwitterLogo,
-      youtube: YoutubeLogo,
-      instagram: InstagramLogo,
-      globe: GlobeLogo,
-      discord: DiscordLogo,
-    },
-  };
+  ];
+
+  const artistData = allArtists.find((artist) => artist.id === id);
+
+  if (!artistData) {
+    return <p>Artist not found</p>;
+  }
 
   return (
     <main>

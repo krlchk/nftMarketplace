@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import EyeImage from "../../../../assets/Eye.png";
 // NFT IMAGES
@@ -64,20 +65,21 @@ const HomepageNFTSection = () => {
                 Explore new trending NFTs
               </p>
             </div>
-            <div className="flex max-w-[224px] items-center rounded-[20px] cursor-pointer border-2 border-[#A259FF] bg-none px-[30px] py-[20px] transition-colors hover:bg-[#7437c4] mobile:max-w-full mobile:justify-center">
+            <Link to="/marketplace" className="flex max-w-[224px] items-center rounded-[20px] cursor-pointer border-2 border-[#A259FF] bg-none px-[30px] py-[20px] transition-colors hover:bg-[#7437c4] mobile:max-w-full mobile:justify-center">
               <div className="mr-3">
                 <img className="h-auto w-[20px]" src={EyeImage} alt="logo" />
               </div>
               <p className="font-workSans text-base font-semibold leading-snug text-white">
                 See All
               </p>
-            </div>
+            </Link>
           </div>
         </div>
         {/* NFT section */}
         <div className="grid grid-cols-3 gap-[30px] tablet:grid-cols-2 mobile:grid-cols-1">
           {visibleData.map((nft) => (
-            <div
+            <Link
+            to=""
               className="rounded-[45px] cursor-pointer hover:bg-[#4B4B4B] bg-[#3B3B3B] pb-[25px]"
               key={nft.title}
             >
@@ -126,7 +128,7 @@ const HomepageNFTSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

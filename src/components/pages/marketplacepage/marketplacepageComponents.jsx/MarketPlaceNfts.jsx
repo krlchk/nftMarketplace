@@ -1,14 +1,17 @@
-const ArtistNFTs = ({ artistsNFTs }) => {
+
+const MarketPlaceNfts = ({marketPlaceNftsData}) => {
   return (
     <section className="h-auto w-full bg-[#2B2B2B]">
       <div className="container flex flex-col bg-[#3B3B3B]">
-        <div className="flex mb-[50px] rounded-3xl justify-center bg-[#2B2B2B]">
-          <p className="font-workSans font-semibold text-white p-2 text-[22px] leading-snug">NFTs</p>
+        <div className="mb-[50px] flex justify-center rounded-3xl bg-[#2B2B2B]">
+          <p className="p-2 font-workSans text-[22px] font-semibold leading-snug text-white">
+            NFTs
+          </p>
         </div>
         <div className="grid grid-cols-3 gap-[30px] tablet:grid-cols-2 mobile:grid-cols-1">
-          {artistsNFTs.map((nft) => (
+          {marketPlaceNftsData.map((nft) => (
             <div
-              className="cursor-pointer rounded-[45px] bg-[#2B2B2B] transition-colors pb-[25px] hover:bg-[#4B4B4B]"
+              className="cursor-pointer rounded-[45px] bg-[#2B2B2B] pb-[25px] transition-colors hover:bg-[#4B4B4B]"
               key={nft.id}
             >
               <div>
@@ -60,9 +63,9 @@ const ArtistNFTs = ({ artistsNFTs }) => {
           ))}
         </div>
       </div>
-        <hr className="border-[1px] border-[#2B2B2B]" />
+      <hr className="border-[1px] border-[#2B2B2B]" />
     </section>
   );
 };
 
-export default ArtistNFTs;
+export default MarketPlaceNfts;
